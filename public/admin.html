@@ -1,0 +1,141 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    textarea, input {
+      width: 100%;
+      margin: 5px 0;
+      padding: 8px;
+    }
+    button {
+      padding: 8px 16px;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Manage Questions and HP</h1>
+  <label>Prince HP:</label>
+  <input type="number" id="princeHP" value="50">
+  <label>Dragon HP:</label>
+  <input type="number" id="dragonHP" value="50">
+  <label>Questions (JSON Format):</label>
+  <textarea id="questions" rows="10"></textarea>
+  <button onclick="saveSettings()">Save Settings</button>
+
+  <script>
+     function saveSettings() {
+    try {
+      const princeHP = Number(document.getElementById("princeHP").value);
+      const dragonHP = Number(document.getElementById("dragonHP").value);
+      const questions = JSON.parse(document.getElementById("questions").value);
+      
+      const settings = {
+        princeHP,
+        dragonHP,
+        questions
+      };
+
+      localStorage.setItem("gameSettings", JSON.stringify(settings));
+      alert("Settings saved!");
+      console.log("Game settings saved:", settings);
+    } catch (error) {
+      alert("Invalid JSON format! Please check your input.");
+      console.error("Error saving settings:", error);
+    }
+  }
+
+  // Load existing settings on page load
+  window.onload = function() {
+    const savedSettings = localStorage.getItem("gameSettings");
+    if (savedSettings) {
+      try {
+        const settings = JSON.parse(savedSettings);
+        document.getElementById("princeHP").value = settings.princeHP || 50;
+        document.getElementById("dragonHP").value = settings.dragonHP || 50;
+        document.getElementById("questions").value = JSON.stringify(settings.questions, null, 2);
+      } catch (error) {
+        console.error("Error loading settings in admin panel:", error);
+      }
+    }
+  };
+  </script>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    textarea, input {
+      width: 100%;
+      margin: 5px 0;
+      padding: 8px;
+    }
+    button {
+      padding: 8px 16px;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Manage Questions and HP</h1>
+  <label>Prince HP:</label>
+  <input type="number" id="princeHP" value="50">
+  <label>Dragon HP:</label>
+  <input type="number" id="dragonHP" value="50">
+  <label>Questions (JSON Format):</label>
+  <textarea id="questions" rows="10"></textarea>
+  <button onclick="saveSettings()">Save Settings</button>
+
+  <script>
+     function saveSettings() {
+    try {
+      const princeHP = Number(document.getElementById("princeHP").value);
+      const dragonHP = Number(document.getElementById("dragonHP").value);
+      const questions = JSON.parse(document.getElementById("questions").value);
+      
+      const settings = {
+        princeHP,
+        dragonHP,
+        questions
+      };
+
+      localStorage.setItem("gameSettings", JSON.stringify(settings));
+      alert("Settings saved!");
+      console.log("Game settings saved:", settings);
+    } catch (error) {
+      alert("Invalid JSON format! Please check your input.");
+      console.error("Error saving settings:", error);
+    }
+  }
+
+  // Load existing settings on page load
+  window.onload = function() {
+    const savedSettings = localStorage.getItem("gameSettings");
+    if (savedSettings) {
+      try {
+        const settings = JSON.parse(savedSettings);
+        document.getElementById("princeHP").value = settings.princeHP || 50;
+        document.getElementById("dragonHP").value = settings.dragonHP || 50;
+        document.getElementById("questions").value = JSON.stringify(settings.questions, null, 2);
+      } catch (error) {
+        console.error("Error loading settings in admin panel:", error);
+      }
+    }
+  };
+  </script>
+</body>
+</html>
+>>>>>>> 8507d74 (Initial commit)

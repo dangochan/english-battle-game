@@ -1,0 +1,3 @@
+console.log("Opening Menu:", openingMenu);
+console.log("Game Container:", gameContainer);
+console.log("Start Button:", startButton);
