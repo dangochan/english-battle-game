@@ -25,28 +25,11 @@ const questions = [
     revealed: []
   },
   {
-    question: "Name a common pet.",
-    answers: ["dog", "cat", "fish","birds"],
-    revealed: []
-  },
-  {
-    question: "Name something people usually carry in their wallet.",
-    answers: ["credit cards", "money", "id card"],
-    revealed: []
-  },
-  {
     question: "Name of materials you can recycle..",
     answers: ["papers", "plastic", "glass", "metal"],
     revealed: []
   },
-  {question:" Name something you can’t leave home without.",
-    answer:["phone", "wallet", "keys", "bag"],
-    revealed:[]
-  },
-  {question:"Name a mode of public transportation.",
-    answer:["bus","train","taxi","subway"],
-    revealed:[]
-  },
+
 
 ];
 
