@@ -21,17 +21,7 @@ if (savedSettings) {
 const questions = [
   {
     question: "Name a popular pizza topping.",
-    answers: ["cheese", "pepperoni", "mushrooms"],
-    revealed: []
-  },
-  {
-    question: "Name a common pet.",
-    answers: ["dog", "cat", "fish","birds"],
-    revealed: []
-  },
-  {
-    question: "Name something people usually carry in their wallet.",
-    answers: ["credit cards", "money", "id card"],
+    answers: ["cheese", "pepperoni", "mushrooms","hawaiian"],
     revealed: []
   },
   {
@@ -39,14 +29,7 @@ const questions = [
     answers: ["papers", "plastic", "glass", "metal"],
     revealed: []
   },
-  {question:" Name something you can’t leave home without.",
-    answer:["phone", "wallet", "keys", "bag"],
-    revealed:[]
-  },
-  {question:"Name a mode of public transportation.",
-    answer:["bus","train","taxi","subway"],
-    revealed:[]
-  },
+
 
 ];
 
