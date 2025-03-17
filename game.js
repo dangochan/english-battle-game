@@ -21,7 +21,7 @@ if (savedSettings) {
 const questions = [
   {
     question: "Name a popular pizza topping.",
-    answers: ["cheese", "pepperoni", "mushrooms"],
+    answers: ["cheese", "pepperoni", "mushrooms","hawaiian"],
     revealed: []
   },
   {
