@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  .answer-section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px; /* Add some space below the answer section */
+}
+
+.revealed-answers {
+    margin: 10px auto; /* Center horizontally with auto margins */
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 8px;
+    border-radius: 4px;
+    display: block; /* Make it a block element so it takes its own line */
+    text-align: center; /* Center the text inside */
+    width: fit-content; /* Make the width fit the content */
+}
+  #questionBox {
+    margin: 10px;
+  }
+  
+  #answerInput {
+    padding: 5px;
+    margin: 5px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    margin: 5px;
+  }
+  
+  #choiceDialog {
+    margin: 10px;
+    border: 2px solid #333;
+    padding: 10px;
+    display: inline-block;
+  }
+  
